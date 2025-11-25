@@ -1,0 +1,23 @@
+{
+  "num_drones": 10,
+  "dt": 0.1,
+  "interaction_range": 5.0,
+  "max_speed": 2.0,
+
+  "ppo": {
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "lam": 0.95,
+    "clip_range": 0.2,
+    "batch_size": 64,
+    "epochs": 10,
+    "total_episodes": 500
+  },
+
+  "reward_weights": {
+    "W_collision": 1.0,
+    "W_alignment": 0.5,
+    "W_safety": 1.0,
+    "W_leader": 0.5
+  }
+}
