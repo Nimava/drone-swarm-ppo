@@ -27,34 +27,28 @@ leader–follower performance
 
 without manually tuning swarm parameters.
 
-📁 Repository Structure
-drone-swarm-ppo/
+📁 Repository Structure (drone-swarm-ppo)
+.
+├── src/                          # All source code (simulation + PPO training)
+│   ├── drone_swarm_env.py        # Gym-like environment for PPO
+│   ├── train_ppo.py              # PPO training script
+│   ├── run_trained_policy.py     # Run the trained PPO policy
+│   ├── simulate_jungle_case.py   # Simulation script for the "jungle" scenario
+│   ├── case01_nozzle_simulation.py
+│   ├── case02_straight_path.py
+│   ├── case03_dynamic_obstacles.py
+│   ├── ... (other case files)
 │
-├── src/
-│   ├── 2d_nozzle.py                   # 2D nozzle simulation
-│   ├── 3d_nozzle.py                   # 3D nozzle simulation
-│   ├── jungle.py                      # Jungle simulation
-│   ├── moving_obstacle.py             # Moving obstacles simulation
-│   ├── drone_swarm_env.py             # RL environment (state, action, rewards)
-│   ├── train_ppo.py                   # PPO training script
-│   ├── run_trained_policy.py          # Evaluate trained PPO policy
-│   ├── simulate_jungle_case.py        # PPO-based jungle-case simulation
+├── docs/                         # Figures, GIFs, documentation images
+│   ├── nozzle_2d.png
+│   ├── nozzle_3d.png
+│   ├── trajectories.gif
+│   ├── ...
 │
-├── docs/
-│   ├── 2d_nozzle_path.png                  
-│   ├── 3d_nozzle_path.png                  
-│   ├── jungle_path.png
-│   ├── moving_obstacles_path.png
-│   ├── 2d_nozzle_animation.gif
-│   ├── 3d_nozzle_animation.gif
-│   ├── jungle_animation.gif
-│   └── README_figures.md
-│
-├── config.json                        # Global configuration (parameters)
-├── LICENSE                            # MIT License
-├── requirements.txt                   # Python dependencies
-├── .gitignore
-└── README.md
+├── config.json                   # Configuration file for simulations (user-editable)
+├── requirements.txt              # Python dependencies
+├── LICENSE                       # MIT License
+└── README.md                     # Project documentation
 
 🔧 Installation
 
