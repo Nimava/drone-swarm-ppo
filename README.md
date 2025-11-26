@@ -86,11 +86,9 @@ Reward penalizes collisions and instability, and rewards cohesion, alignment, an
 
 Example outputs (in docs/):
 
-2D + 3D nozzle geometry
+All cases drones path 2D nozzle, 3D nozzle, jungle, moving obstacles)
 
-PPO vs baseline trajectories
-
-GIF animations of swarm movement
+GIF animations of some caes
 
 These demonstrate smoother trajectories and fewer collisions with PPO.
 
