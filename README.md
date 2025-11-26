@@ -36,6 +36,7 @@ pip install -r requirements.txt
 
 🚀 Running Simulations
 1. Simulations
+
 python src/2d_nozzle.py
 
 python src/3d_nozzle.py
@@ -45,12 +46,15 @@ python src/jungle.py
 python src/moving_obstacle.py
 
 2. Train PPO
+   
 python src/train_ppo.py
 
-3. Evaluate trained PPO policy
+4. Evaluate trained PPO policy
+   
 python src/run_trained_policy.py
 
-4. Run the optimized jungle-case
+6. Run the optimized jungle-case
+   
 python src/simulate_jungle_case.py
 
 🧠 Summary of PPO Approach
